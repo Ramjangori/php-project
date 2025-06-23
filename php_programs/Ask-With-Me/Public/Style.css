@@ -1,0 +1,260 @@
+a{
+    
+    font-size: 18px !important;
+}
+.margin-bt-15{
+    margin-bottom: 15px;
+}
+.margin-tp-15{
+    margin-top: 15px;
+}
+.header{
+    text-align: center;
+}
+
+body {
+  padding-top:100px;
+}
+.navbar-fixed {
+    position: fixed; /* Makes the nav stick to viewport */
+    top: 0;          /* Positions at top of screen */
+    left: 0;         /* Aligns to left edge */
+    width: 100%;     /* Full width */
+    z-index: 1000;   /* Ensures nav stays above other content */
+    background: #fff; /* Solid background color */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Subtle shadow */
+    padding: 10px 0; /* Vertical padding */
+    transition: all 0.3s ease; /* Smooth transitions */
+}
+.question-list{
+    border: 1px solid rgb(212, 209, 209) !important;
+    padding:14px !important;
+    margin:4px;
+    
+}
+.question-list a{
+    color :rgb(146, 209, 233);
+    text-decoration: none;
+    cursor: pointer;
+}
+.answer_wrapper{
+    border-bottom:1px solid rgb(105, 93, 93) !important;
+    color:rgb(114, 125, 134);
+    font-size:15px;
+    margin: 3px;
+}
+/* Answer Container Styling */
+.answer_wrapper {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px 0;
+    border-left: 4px solid #28a745;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.answer_wrapper p {
+    margin: 0;
+    font-size: 1rem;
+    color: #343a40;
+    line-height: 1.5;
+}
+
+.answer_wrapper p:first-child::before {
+    content: "🗨️ ";
+}
+
+/* User Label Styling */
+p[style*="user"] {
+    font-weight: bold;
+    color: #6c757d;
+    margin-bottom: 5px !important;
+    font-size: 0.9rem;
+}
+
+p[style*="user"]::before {
+    content: "👤 ";
+}
+/* CSS for Question List */
+.question-list {
+    padding: 15px;
+    margin: 10px 0;
+    background: white;
+    border-left: 4px solid #3498db;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.question-list:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.question-list h4 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.question-list a {
+    color: #2c3e50;
+    text-decoration: none;
+    display: block;
+}
+
+.question-list a:hover {
+    color: #3498db;
+}
+.category-list a {
+    color: rgb(79, 87, 90) !important;
+    text-decoration: none !important;
+    cursor: pointer;
+    display: block; /* Makes entire area clickable */
+    padding: 10px; /* Adds spacing */
+}
+
+.category-list a:hover {
+    color: #0056b3 !important; /* Change color on hover */
+    background-color: #f8f9fa; /* Light background on hover */
+}
+.myquestion {
+  color: #6c757d; /* Muted gray color */
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 5px solid #dc3545; /* Red accent border */
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  font-weight: 300;
+  animation: fadeIn 0.5s ease-in-out;
+}
+/* Modern Question List Styling */
+.MyQ-list {
+    background: #ffffff;
+    padding: 18px 25px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    border-left: 4px solid #3498db;
+}
+
+.MyQ-list:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.MyQ-list h4 {
+    margin: 0;
+    flex: 1;
+    padding-right: 30px;
+    font-size: 1.2rem;
+}
+
+.MyQ-list h4 a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.MyQ-list h4 a:hover {
+    color: #3498db;
+}
+
+.MyQ-list h6 {
+    margin: 0;
+    min-width: 80px;
+    text-align: right;
+}
+
+.MyQ-list .delete-btn {
+    color: #fff;
+    background-color: #ec8b0c;
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+.MyQ-list .delete-btn:hover {
+    background-color: #c0392b;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* Navbar Links Styling */
+.nav-item {
+    margin: 0 8px;
+    transition: all 0.3s ease;
+}
+
+.nav-link {
+    color: #495057 !important;
+    font-weight: 500;
+    padding: 8px 15px !important;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    position: relative;
+    font-size: 1rem;
+}
+
+.nav-link:hover {
+    color: #0d6efd !important;
+    background: rgba(13, 110, 253, 0.1);
+    transform: translateY(-2px);
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #0d6efd;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::before {
+    width: 70%;
+}
+
+/* Active State */
+.nav-link.active {
+    color: #0d6efd !important;
+    font-weight: 600;
+}
+
+/* Special styling for Logout */
+a[href*="logout"] {
+    color: #dc3545 !important;
+}
+
+a[href*="logout"]:hover {
+    background: rgba(220, 53, 69, 0.1) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-item {
+        margin: 5px 0;
+    }
+    .nav-link {
+        padding: 10px 15px !important;
+    }
+}
